@@ -1,0 +1,41 @@
+Hooks in Reactjs:
+
+-> Hooks are something that helps developers to hook into the state of a component
+
+State: its a built in object in react that is used to store the data about a component.
+
+Person: 
+    name: X 
+    StateOfMind: Calm, angry, happy etc....
+
+
+    const myFunction = () => {
+        console.log()
+    }
+    myFunction()
+
+Types of Hooks in React:
+
+1) useState()  --> const [value, setValue] = useState('Initial Value')
+2) useEffect() --> handle state by controlling the component life cycle / to perform side effect (async tasks like fetching data from api)
+
+            useEffect(() => {
+                    console.log('Test')
+                }, [])
+
+    [] -> dependency array
+
+3) useCallback() --> used to store the snapshot of a function and it prevents rerender
+4) useMemo() --> used to store the snapshot of a value and returns it, does not re render
+
+5) useRef() --> reference a element in a component.
+
+        let newRef =  useRef() 
+
+        <button><>
+
+        handleClick () {
+            newRef.onChange
+        }
+
+        <input reference={newRef}/>
